@@ -1,0 +1,113 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url('bg1.jpeg');
+    height: 100vh;
+    width:100vw;
+    background-size: cover;
+    color:#ffffff;
+    font-family: 'open-sans',Arial,sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+
+}
+.cont{
+    width:80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    box-sizing:border-box; 
+}
+.heading1{
+    color:white;
+    text-align: center;
+    align-items:center;
+    font-size:36px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.searchbox{
+    width:100%;
+    padding:15px 10px;
+    border:none;
+    background-color: rgba(255,255,255,0.15);
+    font-size:20px;
+    color:inherit;
+    margin-bottom: 10px;
+}
+.searchbox::placeholder{
+    color: #ffffff;
+}
+.cont2{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.img1{
+    width:30vmin;
+    align-self: center;
+}
+.weathercity{
+    font-size: 36px;
+    font-weight: 600;
+    margin:20px 0;
+}
+.weatherday{
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+.weatherindicator::before{
+    content:'';
+    display: inline-block;
+    vertical-align: middle;
+    width:30px;
+    height:30px;
+    background-size: cover;
+    margin-right: 10px;
+}
+.humidity::before{
+    background-image: url(images/humid.png);
+   
+}
+.wind::before{
+    background-image: url(images/windy.png);
+}
+.pressure::before{
+    background-image: url(images/pressure.jpg);
+}
+.value{
+    font-size: 17px;
+}
+.sym{
+    font-size: 17px;
+    padding: 4px;
+}
+.temperature{
+    font-size: 36px;
+    
+    margin:20px 0;
+}
+.cont3{
+    width:100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.weatherforecasticon{
+    max-width: 50%;
+}
+.weatherforecastitem{
+    background-color: rgba(255,255,255,0.2);
+    border-radius:10px;
+    margin:0 10px 10px;
+    padding: 30px 5px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: calc(20%-20px);
+    flex-grow: 1;
+}
+
